@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;600;700;800&display=swap');
 
 /* CSS custom variable */
-:root{
+:root {
     --font-family: 'Poppins', sans-serif;
     --primary-color: #534C64;
     --secondary-color: #0B0223;
@@ -14,18 +14,19 @@
 }
 
 /* Universal selector  */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     padding: 10px;
     font-family: var(--font-family);
 }
 
 /* Navbar start here  */
-.navbar{
+.navbar {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -33,13 +34,14 @@ body{
     min-height: 50px;
 }
 
-.nav-logo{
+.nav-logo {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-basis: 65%;
+    flex-basis: 50%;
 }
-.nav-logo h2{
+
+.nav-logo h2 {
     font-size: 45px;
     margin-left: 10px;
     font-family: var(--font-family);
@@ -47,23 +49,28 @@ body{
     letter-spacing: 0.7px;
 }
 
-.nav-logo img{
+.nav-logo img {
     width: 80px;
 }
-.text-color{
+
+.text-color {
     color: #FF42A5;
 }
-.navbar-menu{
-    flex-basis: 35%;
+
+.navbar-menu {
+    flex-basis: 40%;
 }
-.navbar-menu ul{
+
+.navbar-menu ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.navbar-menu li{
+
+.navbar-menu li {
     list-style: none;
 }
+
 .navbar-menu li a {
     text-decoration: none;
     font-size: 18px;
@@ -71,7 +78,8 @@ body{
     font-family: var(--font-family);
     color: var(--primary-color);
 }
-.btn-classic{
+
+.btn-classic {
     font-size: 18px;
     font-weight: 400px;
     font-family: var(--font-family);
@@ -80,7 +88,8 @@ body{
     border: 0;
     border-radius: 5px;
 }
-.youtube-icon{
+
+.youtube-icon {
     background-color: red;
     font-size: 20px;
     border: none;
@@ -88,19 +97,212 @@ body{
     border-radius: 5px;
     margin: 3px;
 }
-.btn-classic:hover{
+
+.btn-classic:hover {
     background-color: rgba(11, 2, 35, 1);
     color: #fff;
 }
 
-/* mobile device */
-@media screen and (max-width: 576px) {
-    .navbar{
-        flex-direction: column;
-    }
-    .navbar-menu ul{
-        flex-direction: column;  
-    }
-    
+/* banner section start here */
+.banner-container {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-content h3 {
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+.banner-content h1 {
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: -2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn-icon{
+    font-size: 22px;
+    color: red;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 10px 0; 
+}
+.btn-icons{
+    font-size: 22px;
+    color: red;
+}
+.btn-icon-last{
+    font-size: 22px;
+    color: #0B0223;
+    margin: 10px 0 20px;
+}
+.button-text{
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 10px;
+    color: var(--primary-color);
+}
+.btn-primary{
+    padding: 10px 30px;
+    font-size: 20px;
+    border: 0;
+    border-radius: 45px;
+    margin: 5px 10px 0 0;
+    cursor: pointer;
+    background-color: #FF42A5;
+    color: var(--background-color-btn);
+    font-weight: 600;
+}
+.banner-image img{
+    width: 100%;
+}
+/* Game player section here */
+.game-section{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    gap: 10px;
+}
+.game-items{
+    display: flex;
+    /* border: 1px solid red; */
+    align-items: center;
+    padding: 10px;
+}
+.game-icon{
+    max-width: 50px;
+    border-radius: 50px;
+    padding-right: 10px;
+}
+.game-title{
+    font-size: 16px;
+    font-weight: 500;
+    color: #0B0223;
+}
+/* footer-section */
+.footer{
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 50px 0;
+    color: #fff;
+}
+.brand-logo img{
+    width: 50px;
+}
+.brand-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     
 }
+.brand-logo p{
+    font-size: 30px;
+    margin-left: 10px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.feature-content{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.social-icon{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    margin: 0 auto 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-icon i{
+    font-size: 25px;
+    color: #fff;
+    flex-wrap: wrap;
+}
+.policy-rules{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 0 auto 10px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.60);
+}
+.copyright{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.60);
+}
+/* mobile device */
+@media screen and (max-width: 425px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-menu ul {
+        flex-direction: column;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .banner-content{
+        margin-top: 30px;
+    }
+    .banner-content h3{
+        font-size: 30px;
+    }
+    .banner-content h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .btn-icon{
+        font-size: 15px;
+    }
+    .button-text{
+        font-size: 14px;
+    }
+    .btn-primary{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Tablet device  */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+
+
+
+
+/* Laptop device  */
+@media screen and (max-width: 769px) and (max-width: 1024px) {}
