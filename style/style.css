@@ -19,3 +19,88 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    padding: 10px;
+    font-family: var(--font-family);
+}
+
+/* Navbar start here  */
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+}
+
+.nav-logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 65%;
+}
+.nav-logo h2{
+    font-size: 45px;
+    margin-left: 10px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    letter-spacing: 0.7px;
+}
+
+.nav-logo img{
+    width: 80px;
+}
+.text-color{
+    color: #FF42A5;
+}
+.navbar-menu{
+    flex-basis: 35%;
+}
+.navbar-menu ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar-menu li{
+    list-style: none;
+}
+.navbar-menu li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400px;
+    font-family: var(--font-family);
+    color: var(--primary-color);
+}
+.btn-classic{
+    font-size: 18px;
+    font-weight: 400px;
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    padding: 6px 12px;
+    border: 0;
+    border-radius: 5px;
+}
+.youtube-icon{
+    background-color: red;
+    font-size: 20px;
+    border: none;
+    padding: 3px 6px;
+    border-radius: 5px;
+    margin: 3px;
+}
+.btn-classic:hover{
+    background-color: rgba(11, 2, 35, 1);
+    color: #fff;
+}
+
+/* mobile device */
+@media screen and (max-width: 576px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar-menu ul{
+        flex-direction: column;  
+    }
+    
+    
+}
