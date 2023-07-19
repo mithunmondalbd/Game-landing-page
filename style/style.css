@@ -575,7 +575,16 @@ body {
         grid-template-columns: 1fr;
     }
     .position-part{
-        font-size: 13px;
+        font-size: 12px;
+    }
+    .img-editing{
+        min-width: 300px;
+    }
+    .btn-player{
+        left: 90px;
+    }
+    .bonus-image{
+        min-width: 401px;
     }
 }
 
@@ -583,4 +592,18 @@ body {
 
 
 /* Laptop device  */
-@media screen and (max-width: 769px) and (max-width: 1024px) {}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .navbar{
+        flex-direction: column;
+        padding-top: 30px
+    }
+    .navbar-menu li a{
+        margin: 0 10px;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .carrier-section{
+        grid-template-columns: 1fr;
+    }
+}
