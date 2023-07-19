@@ -42,7 +42,7 @@ body {
 }
 
 .nav-logo h2 {
-    font-size: 45px;
+    font-size: 40px;
     margin-left: 10px;
     font-family: var(--font-family);
     font-weight: 700;
@@ -50,7 +50,7 @@ body {
 }
 
 .nav-logo img {
-    width: 80px;
+    width: 60px;
 }
 
 .text-color {
@@ -73,33 +73,34 @@ body {
 
 .navbar-menu li a {
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 400px;
+    font-size: 17px;
+    font-weight: 500px;
     font-family: var(--font-family);
     color: var(--primary-color);
 }
 
 .btn-classic {
-    font-size: 18px;
-    font-weight: 400px;
+    font-size: 17px;
+    font-weight: 500px;
     font-family: var(--font-family);
     color: var(--primary-color);
-    padding: 6px 12px;
+    padding: 5px 15px;
     border: 0;
     border-radius: 5px;
 }
 
 .youtube-icon {
-    background-color: red;
-    font-size: 20px;
+    /* background-color: red; */
+    font-size: 18px;
     border: none;
     padding: 3px 6px;
     border-radius: 5px;
     margin: 3px;
+    font-weight: 600;
 }
 
 .btn-classic:hover {
-    background-color: rgba(11, 2, 35, 1);
+    background-color: rgba(160, 159, 168, 0.425);
     color: #fff;
 }
 
@@ -150,6 +151,9 @@ body {
     font-weight: 400;
     padding-left: 10px;
     color: var(--primary-color);
+}
+.btn-border{
+    margin: 12px 0;
 }
 .btn-primary{
     padding: 10px 30px;
@@ -216,7 +220,7 @@ body {
 .download-container{
     display: flex;
     justify-content: space-between;
-    
+    margin-bottom: 40px;
 }
 .instant-pay{
     /* flex-basis: 50%; */
@@ -252,11 +256,73 @@ body {
 .img-position{
     max-width: 200px;
     position: absolute;
-    bottom: -10%;
+    bottom: -6%;
     left: -25%;
     /* transform: translate(-50%, -50%); */
 }
 /* Download section end here */
+
+/* Funny image start here */
+.funny-content{
+    text-align: center;
+    margin: 50px 0;
+}
+.funny-content h1{
+    font-size: 35px;
+    font-weight: 700;
+    color: #0B0223;
+}
+.funny-content p{
+    color: #534C64;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.color-image{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+}
+.image-section{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 20px auto 50px;
+    flex-wrap: wrap;
+    
+}
+.img-editing{
+    max-width: 230px;
+}
+.img-desc{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary-color);
+   
+}
+.parent-img{
+    position: relative;
+}
+.btn-player{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 500;
+    color: #F948B2;
+    position: absolute;
+    bottom: 140px;
+    left: 60px;
+    font-size: 18px;
+}
+.btn-icon-tab{
+    font-size: 40px;
+    padding: 5px;
+    background: linear-gradient(180deg, black);
+    color: rgb(252, 77, 46)
+}
+/* Funny image end here */
 
 /* Carrier section is start here */
 .carrier-section{
@@ -266,7 +332,7 @@ body {
     /* height: 80vh; */
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin: 30px;
 }
 .carrier-content{
     padding: 0 20px;
@@ -317,6 +383,7 @@ body {
 
 /* Game player section here */
 .game-section{
+    
     display: flex;
     align-content: center;
     justify-content: center;
@@ -325,12 +392,13 @@ body {
     width: 80%;
     margin: auto;
     gap: 10px;
+    padding: 40px 0 50px;
 }
 .game-items{
     display: flex;
     /* border: 1px solid red; */
     align-items: center;
-    padding: 10px;
+    /* padding: 10px; */
 }
 .game-icon{
     max-width: 50px;
@@ -420,6 +488,9 @@ body {
     .navbar-menu ul {
         flex-direction: column;
     }
+    .navbar-menu ul li{
+        padding: 10px 0;
+    }
     .banner-container{
         flex-direction: column-reverse;
         text-align: center;
@@ -428,22 +499,27 @@ body {
         margin-top: 30px;
     }
     .banner-content h3{
-        font-size: 30px;
+        font-size: 22px;
     }
     .banner-content h1{
-        font-size: 50px;
-        line-height: 50px;
+        font-size: 33px;
+        line-height: 40px;
+        letter-spacing: 3px;
     }
-    .btn-icon{
-        font-size: 15px;
+    .btn-icon .btn-icons .btn-icon-last{
+        font-size: 20px;
     }
     .button-text{
-        font-size: 14px;
+        font-size: 16px;
+    }
+    .btn-border{
+        padding: 7px 0;
     }
     .btn-primary{
         padding: 10px 20px;
         font-size: 14px;
     }
+   
     .carrier-section{
         grid-template-columns: 1fr;
     }
@@ -467,16 +543,35 @@ body {
     .fluid-image{
         width: 100%;
     }
+    .img-editing{
+        width: 100%;
+    }
 }
 
 /* Tablet device  */
 @media screen and (min-width: 426px) and (max-width: 768px) {
-    .navbar {
+    .navbar-menu ul {
         flex-direction: column;
+    }
+    .navbar-menu ul li{
+        padding: 10px 0;
     }
     .banner-container{
         flex-direction: column-reverse;
         text-align: center;
+    }
+    .download-container{
+        flex-direction: column;
+    }
+    .img-position{
+        left: 0;
+        max-width: 150px;
+    }
+    .carrier-section{
+        grid-template-columns: 1fr;
+    }
+    .position-part{
+        font-size: 13px;
     }
 }
 
