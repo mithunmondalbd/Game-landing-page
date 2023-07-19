@@ -165,6 +165,156 @@ body {
 .banner-image img{
     width: 100%;
 }
+
+/* gamer section start here */
+.game-section{
+    display: flex;
+    
+}
+.fluid-image{
+    max-width: 500px;
+}
+/* .team-mate-image img{
+   max-width: 500px;
+   
+   
+} */
+.game-all-content{
+    flex: 1;
+}
+.game-all-content h2{
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    line-height: 50px;
+}
+.about-description{
+    font-size: 17px;
+    font-weight: 500;
+    color: #534C64;
+    line-height: 25px;
+    padding: 10px 15px;
+}
+.wish-purpose{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #534C64;
+}
+.message-me{
+    font-size: 18px;
+    font-weight: 500;
+    color: #534C64;
+}
+/* gamer section end here */
+
+/* Instant pay download start here */
+.download-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.instant-pay{
+    /* flex-basis: 50%; */
+    max-width: 400px;
+    margin: auto;
+    padding: 22px;
+    text-align: center;
+}
+.instant-pay h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.text-modify{
+    color: #FF42A5;
+}
+.instant-pay p{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--primary-color);
+    line-height: 30px;
+}
+.image-folder{
+    /* flex-basis: 60%; */
+    text-align: right;
+    height: auto;
+    position: relative;
+    flex-grow: 0;
+}
+.bonus-image{
+   max-width: 400px;
+}
+.img-position{
+    max-width: 200px;
+    position: absolute;
+    bottom: -10%;
+    left: -25%;
+    /* transform: translate(-50%, -50%); */
+}
+/* Download section end here */
+
+/* Carrier section is start here */
+.carrier-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #FF42A5;
+    /* height: 80vh; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.carrier-content{
+    padding: 0 20px;
+}
+.carrier-start{
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 80px;
+}
+.carrier-of-objective{
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 25px;
+}
+.position-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 30px 0 20px;
+    flex-wrap: wrap;
+}
+.position-part li{
+    list-style: none;
+}
+.new-button-added{
+    background: #fff;
+    color: var(--primary-color);
+    color: #FF42A5;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+}
+.new-button-added:hover{
+    background-color: #F948B2;
+    color: #fff;
+}
+.part-of-image img{
+    width: 100%;
+    height: 100%;
+}
+/* carrier section end here  */
+
 /* Game player section here */
 .game-section{
     display: flex;
@@ -192,6 +342,9 @@ body {
     font-weight: 500;
     color: #0B0223;
 }
+
+/* game section end here */
+
 /* footer-section */
 .footer{
     background-color: var(--primary-color);
@@ -255,6 +408,9 @@ body {
     font-weight: 400;
     color: rgba(255, 255, 255, 0.60);
 }
+
+
+
 /* mobile device */
 @media screen and (max-width: 425px) {
     .navbar {
@@ -287,6 +443,29 @@ body {
     .btn-primary{
         padding: 10px 20px;
         font-size: 14px;
+    }
+    .carrier-section{
+        grid-template-columns: 1fr;
+    }
+    .carrier-start{
+        font-size: 30px;
+    }
+    .position-part{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .download-container{
+        flex-direction: column;
+    }
+    .img-position{
+        max-width: 100px;
+        left: 0;
+    }
+    .bonus-image{
+        width: 100%;
+    }
+    .fluid-image{
+        width: 100%;
     }
 }
 
